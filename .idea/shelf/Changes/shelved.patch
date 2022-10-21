@@ -1,0 +1,14 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>creds.py
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 58b24d7e4454fb563d91423695c70eb56404fd47)
++++ b/.gitignore	(date 1666387114875)
+@@ -1,1 +1,1 @@
+-creds.py
+\ No newline at end of file
++/creds.py
