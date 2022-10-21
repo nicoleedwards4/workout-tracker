@@ -1,15 +1,16 @@
 import requests
 from datetime import datetime
 import os
+import creds
 
-APP_ID = os.environ.get("APP_ID")
-API_KEY = os.environ.get("API_KEY")
+APP_ID = creds.APP_ID
+API_KEY = creds.API_KEY
 GENDER = "FEMALE"
 WEIGHT_KG = "80"
 HEIGHT = "172.72"
 AGE = "41"
-sheety_token = os.environ.get("SHEETY_TOKEN")
-SHEETY_BEARER = os.environ.get("SHEETY_HEADER")
+sheety_token = creds.SHEETY_TOKEN
+SHEETY_BEARER = creds.SHEETY_HEADER
 sheety_header = {"Authorization": {SHEETY_BEARER}}
 
 
