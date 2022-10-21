@@ -1,16 +1,17 @@
 import requests
 from datetime import datetime
+import os
 
-APP_ID = "5fa17e1e"
-API_KEY = "83bb2a7f597ae01dcea740728a9e3810"
+APP_ID = os.environ.get("APP_ID")
+API_KEY = os.environ.get("API_KEY")
 GENDER = "FEMALE"
 WEIGHT_KG = "80"
 HEIGHT = "172.72"
 AGE = "41"
-sheety_token = "laksfwyr3oiwhrjlksdfnj895y03ur"
-sheety_header = {
-    "Authorization": "Bearer laksfwyr3oiwhrjlksdfnj895y03ur"
-}
+sheety_token = os.environ.get("SHEETY_TOKEN")
+SHEETY_BEARER = os.environ.get("SHEETY_HEADER")
+sheety_header = {"Authorization": {SHEETY_BEARER}}
+
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 exercise_input = input("Tell which exercise you did today?: ")
